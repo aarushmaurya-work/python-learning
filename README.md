@@ -25,59 +25,43 @@ python-learning/
 ├── oop/             # Classes, objects, and OOP examples
 ├── mini_projects/   # Projects like games, calculators, and scripts
 └── README.md        # This file
+```
+
 ---
 
 ## 🛠️ Mini Projects
 
 Some examples of projects included in this repository:
 
-- **Calculator:** Command-line calculator for basic and advanced operations
-    
-- **Number Guessing Game:** CLI game with interactive hints
-    
-- **Tic-Tac-Toe:** Two-player terminal-based game
-    
-- **File Organizer:** Automatically sorts files into folders
-    
-- **Web Scraping & API Projects:** Fetching and processing real-world data
-    
+- **Calculator:** Command-line calculator for basic and advanced operations.
+- **Number Guessing Game:** CLI game with interactive hints.
+- **Tic-Tac-Toe:** Two-player terminal-based game.
+- **File Organizer:** Automatically sorts files into folders.
+- **Web Scraping & API Projects:** Fetching and processing real-world data.
 
 ---
 
 ## 🚀 How to Run
 
 1. **Clone the repository:**
-    
-    Bash
-    
-    ```
-    git clone [https://github.com/YOUR_USERNAME/python-learning.git](https://github.com/YOUR_USERNAME/python-learning.git)
-    ```
-    
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/python-learning.git
+   ```
+
 2. **Navigate into a project folder:**
-    
-    Bash
-    
-    ```
-    cd python-learning/mini_projects/calculator
-    ```
-    
+   ```bash
+   cd python-learning/mini_projects/calculator
+   ```
+
 3. **Run the script with Python:**
-    
-    Bash
-    
-    ```
-    python calculator.py
-    ```
-    
+   ```bash
+   python calculator.py
+   ```
 
 ---
 
 ## 🎯 Goals
 
 - Strengthen Python programming skills and problem-solving.
-    
 - Build meaningful projects to showcase in a portfolio or applications.
-    
 - Explore advanced topics like data analysis, automation, and web development.
-    
