@@ -28,6 +28,7 @@ def add(todo_list):
             completed = False
         task = {"task": title, "completed": completed}
         todo_list.append(task)
+        print(f"Added '{task["task"]}' to the list!")
 
 
 def view(todo_list):
@@ -44,7 +45,7 @@ def mark(todo_list):
     while True:
         while True:
             index = input(
-                f"Enter the task number (1 - {len(todo_list)}) ('q' to return to menu) : "
+                f"Enter the task number to mark it(1 - {len(todo_list)}) ('q' to return to menu) : "
             )
             try:
                 index = int(index) - 1
@@ -61,13 +62,14 @@ def mark(todo_list):
                 todo_list[index]["completed"] = False
             elif todo_list[index]["completed"] == False:
                 todo_list[index]["completed"] = True
+            print(f"Configued '{todo_list[index]["task"]}' as {todo_list[index]["completed"]} !")
 
 
 def delete(todo_list):
     while True:
         while True:
             index = input(
-                f"Enter the task number to delete  (1 - {len(todo_list)}) ('q' to return to menu) : "
+                f"Enter the task number to remove (1 - {len(todo_list)}) ('q' to return to menu) : "
             )
             try:
                 index = int(index) - 1
@@ -80,10 +82,13 @@ def delete(todo_list):
         if index == "q":
             break
         else:
+            print(f"Removed '{todo_list[index]["task"]}' from the list")
             todo_list.pop(index)
 
 
 while True:
+    time.sleep(0.1)
+    os.system("cls")
     menu()
     while True:
         mode = input(f"Enter the mode (1 - 5) : ")
@@ -100,11 +105,18 @@ while True:
         os.system("cls")
         add(todo_list)
     elif mode == 2:
+        time.sleep(0.1)
+        os.system("cls")
         view(todo_list)
+        input("Enter any key to return to Main Menu...")
     elif mode == 3:
+        time.sleep(0.1)
+        os.system("cls")
         view(todo_list)
         mark(todo_list)
     elif mode == 4:
+        time.sleep(0.1)
+        os.system("cls")
         view(todo_list)
         delete(todo_list)
     elif mode == 5:
