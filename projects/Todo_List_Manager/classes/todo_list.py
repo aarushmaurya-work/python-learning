@@ -33,12 +33,12 @@ class TodoList:
         self.tasks.append(task)
         self.write_json()
 
-    def update(self, task: dict, attr, value):
-        if task["title"] in [t["title"] for t in self.tasks]:
-            task[attr] = value
+    def update(self, index: int, attr: str, value: str):
+        if 0 <= index < len(self.tasks):
+            self.tasks[index][attr] = value
             self.write_json()
         else:
-            raise ValueError("Task not found")
+            raise IndexError("Invalid task index.")
 
     def delete(self, task: dict):
         if task["title"] in [t["title"] for t in self.tasks]:
